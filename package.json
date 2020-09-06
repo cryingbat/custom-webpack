@@ -1,0 +1,35 @@
+{
+    "name": "custom-webpack",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "dev": "webpack-dev-server",
+        "build": "webpack",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "webpack"
+    ],
+    "author": "denghaoqi",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {
+        "babel": "^6.23.0",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.5",
+        "clean-webpack-plugin": "^3.0.0",
+        "copy-webpack-plugin": "^6.1.0",
+        "css-loader": "^4.2.2",
+        "file-loader": "^6.1.0",
+        "html-webpack-plugin": "^4.4.1",
+        "raw-loader": "^4.0.1",
+        "style-loader": "^1.2.1",
+        "ts-loader": "^8.0.3",
+        "typescript": "^4.0.2",
+        "url-loader": "^4.1.0",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.0"
+    }
+}
