@@ -20,8 +20,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader','sass-loader']
       },
       {
         test: /\.(png|jpg|svg|jpeg|gif)$/,
@@ -29,7 +29,7 @@ module.exports = {
             {
                 loader:'url-loader',
                 options: {
-                    limit: 1024,
+                    limit: 300,
                     name:'[path][name].[ext]',
                 }
             }
@@ -49,7 +49,7 @@ module.exports = {
         options: {
             configFile: path.resolve(__dirname, 'tsconfig.json')
 　　　　 }
-      },
+      }
     ],
   },
   plugins: [
@@ -86,7 +86,6 @@ module.exports = {
             target: "http://localhost:3000",
             pathRewrite: {"^/api" : ""}
         }
-    },
-    useLocalIp: true
+    }
   }
 };
